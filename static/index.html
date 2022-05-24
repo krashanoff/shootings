@@ -101,7 +101,7 @@
 		return $('#days')[0].value;
 	}
 	function set_answer(shootings, days, deaths, injuries) {
-		$('#answer')[0].innerHTML = 'In the past <p class="days">' + days + '</p> days there were <p class="shootings">' + shootings + '</p> mass shootings, causing <p class="deaths">' + deaths + '</p> deaths and <p class="injuries">' + injuries + '</p> injuries.'
+		$('#answer')[0].innerHTML = `In the past <p class="days">${days ?? "..."}</p> days there were <p class="shootings">${shootings ?? "..."}</p> mass shootings, causing <p class="deaths">${deaths ?? "..."}</p> deaths and <p class="injuries">${injuries ?? "..."}</p> injuries.`;
 	}
 
 	function update() {
